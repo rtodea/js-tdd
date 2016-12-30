@@ -1,0 +1,24 @@
+{
+  "name": "js-tdd",
+  "version": "0.0.1",
+  "description": "Starter kit for learning TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive test/unit/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtodea/js-tdd.git"
+  },
+  "keywords": [
+    "tdd",
+    "js",
+    "mocha"
+  ],
+  "author": "Robert T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtodea/js-tdd/issues"
+  },
+  "homepage": "https://github.com/rtodea/js-tdd#readme"
+}

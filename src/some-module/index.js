@@ -1,14 +1,25 @@
-function firstFunction() {
-  // first function prepares the argument
-  return secondFunction('firstFunctionPreparedArgument');
+class Some {
+
+  static firstFunction() {
+    // first function prepares the argument
+    return Some.secondFunction('firstFunctionPreparedArgument');
+  }
+
+  static secondFunction(argument) {
+    return `secondFunction:${argument}`;
+  }
+
 }
 
-function secondFunction(argument) {
-  return `secondFunction:${argument}`
-}
+const obj = {
+  firstFunction: () => {
+    return obj.secondFunction('firstFunctionPreparedArgument');
+  },
 
-
-module.exports = {
-  firstFunction,
-  secondFunction
+  secondFunction: (argument) => {
+    return `secondFunction:${argument}`;
+  }
 };
+
+
+module.exports = obj;

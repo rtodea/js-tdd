@@ -25,7 +25,7 @@ describe('some-module', () => {
         .returns(secondFunctionReturn);
     });
 
-    it('should mock the second function', () => {
+    xit('should mock the second function', () => {
       expect(someModule.secondFunction('anything')).to.eql(secondFunctionReturn);
       expect(sut()).to.not.eql(secondFunctionReturn);
     });
